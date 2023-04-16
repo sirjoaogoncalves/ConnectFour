@@ -1,0 +1,53 @@
+h3 {
+    text-align: center; /* Add this line to center the text */
+    position: fixed; /* Add this line to enable centering in the middle of the screen */
+    top: 30%; /* Add this line to vertically align in the middle of the screen */
+    left: 50%; /* Add this line to horizontally align in the middle of the screen */
+    transform: translate(-50%, -50%); /* Add this line to adjust for centering */
+}
+
+#result{
+    text-align: center;
+    position: fixed;
+    top: 35%;
+    left: 48%;
+}
+
+.grid {
+    border: 1px solid black;
+    height: 120px;
+    width: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: fixed; /* Add this line to enable centering in the middle of the screen */
+    top: 50%; /* Add this line to vertically align in the middle of the screen */
+    left: 50%; /* Add this line to horizontally align in the middle of the screen */
+    transform: translate(-50%, -50%); /* Add this line to adjust for centering */
+}
+.grid div {
+    height: 20px;
+    width: 20px;
+}
+
+.player-one {
+    background-color: red;
+    border-radius: 10px;
+}
+.player-two {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) { /* Change the max-width to your desired breakpoint */
+    .grid {
+        height: 80px; /* Update the height to your desired height for cellphones */
+        width: 100%; /* Update the width to 100% to make it full-width on cellphones */
+    }
+
+    .grid div {
+        height: 15px; /* Update the height of the cells for cellphones */
+        width: 15px; /* Update the width of the cells for cellphones */
+    }
+}
